@@ -18,3 +18,9 @@ __pycache__/
 
 # Logs
 *.log
+
+#api key
+.env
+
+#node modules
+node_modules/
