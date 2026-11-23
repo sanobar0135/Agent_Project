@@ -1,6 +1,6 @@
-from research_agent import run_research_agent
-from coverage_evaluator import evaluate_research_coverage
-from findings_cleanup import clean_papers
+from research.research_agent import run_research_agent
+from research.coverage_evaluator import evaluate_research_coverage
+from research.findings_cleanup import clean_papers
 
 def _short_query(subtopic, missing):
     # Keep API queries short: the subtopic plus a compact phrase from gap feedback.

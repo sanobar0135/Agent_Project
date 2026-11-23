@@ -1,20 +1,20 @@
-from relevance_filter import filter_relevant_papers
-from scope import generate_research_brief, print_research_brief
-from paper_search import search_papers
-from findings_cleanup import clean_papers
-from supervisor import create_research_tasks, print_research_tasks
+from research.relevance_filter import filter_relevant_papers
+from research.scope import generate_research_brief, print_research_brief
+from research.paper_search import search_papers
+from research.findings_cleanup import clean_papers
+from research.supervisor import create_research_tasks, print_research_tasks
 
-from parallel_agents import run_agents_parallel
+from research.parallel_agents import run_agents_parallel
 
-from research_review import (
+from research.research_review import (
     merge_findings,
     check_research_coverage,
     print_research_review
 )
 
-from research_loop import run_additional_research
-from LLM_analyser import analyze_research
-from report_writer import save_report
+from research.research_loop import run_additional_research
+from research.LLM_analyser import analyze_research
+from research.report_writer import save_report
 
 
 def main():

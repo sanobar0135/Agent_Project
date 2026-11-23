@@ -1,5 +1,5 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from research_agent import run_research_agent
+from research.research_agent import run_research_agent
 
 def run_agents_parallel(tasks, max_results=3):
     findings=[]

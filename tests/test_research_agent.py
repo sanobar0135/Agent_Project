@@ -1,4 +1,4 @@
-from research_agent import run_research_agent
+from research.research_agent import run_research_agent
 
 sample_task = {
     "subtopic": "LoRA methods for fine-tuning LLMs",

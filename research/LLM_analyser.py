@@ -11,7 +11,7 @@ client = Groq(
 
 MAX_PAPERS = 4
 MAX_ABSTRACT_LENGTH = 500
-MAX_OUTPUT_TOKENS = 1800
+MAX_OUTPUT_TOKENS = 1500
 
 
 def analyze_research(topic, papers):

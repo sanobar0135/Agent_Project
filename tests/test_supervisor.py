@@ -1,4 +1,4 @@
-from supervisor import create_research_tasks, print_research_tasks
+from research.supervisor import create_research_tasks, print_research_tasks
 
 topic = "Parameter-efficient fine-tuning methods for LLMs"
 

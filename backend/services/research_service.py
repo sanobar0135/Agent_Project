@@ -9,13 +9,13 @@ _jobs={}
 def _pipeline(run_id,topic):
     update_run(run_id,status="running",stage="Creating research brief")
     try:
-        from scope import generate_research_brief
-        from supervisor import create_research_tasks
-        from parallel_agents import run_agents_parallel
-        from research_loop import run_additional_research
-        from research_review import merge_findings
-        from relevance_filter import filter_relevant_papers
-        from LLM_analyser import analyze_research
+        from research.scope import generate_research_brief
+        from research.supervisor import create_research_tasks
+        from research.parallel_agents import run_agents_parallel
+        from research.research_loop import run_additional_research
+        from research.research_review import merge_findings
+        from research.relevance_filter import filter_relevant_papers
+        from research.LLM_analyser import analyze_research
         brief=generate_research_brief(topic)
         update_run(run_id,stage="Planning research tasks",brief=brief)
         tasks=create_research_tasks(topic)

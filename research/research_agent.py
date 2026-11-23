@@ -1,5 +1,5 @@
-from paper_search import search_papers
-from findings_cleanup import clean_papers
+from research.paper_search import search_papers
+from research.findings_cleanup import clean_papers
 
 def run_research_agent(task, max_results=3):
     subtopic, objective = task["subtopic"], task.get("objective", "")

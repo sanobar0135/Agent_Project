@@ -1,4 +1,4 @@
-from findings_cleanup import clean_papers
+from research.findings_cleanup import clean_papers
 
 sample_papers = [
     {
